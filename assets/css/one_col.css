@@ -1,0 +1,63 @@
+/* palette == http://www.colourlovers.com/palette/381835/cyanobacteria */
+#wrapper {
+	margin: 0 auto;
+	width: 1200px;
+	background: #8D9C97;
+
+}
+#header, #footer {
+	margin: 0 0 10px 0;
+	background: #A9ADBC ;
+	text-align:center;
+}
+/*** header ***/
+div#header {
+  	height: 165px;
+  	border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 20px 0 0 0;
+	
+}
+
+div#header h1 a {
+	text-decoration: none;
+	font-size: 400%;
+	padding: 0px;
+	font-family: "phreestyle", Verdana, sans-serif;
+	color: #809385;
+}
+
+div#header h1 a:hover {
+	text-decoration: none;
+	background: none;
+	color: grey;
+	}
+
+
+#navcontainer
+{
+background: #A9ADBC;
+height: 40px;
+margin: 0 0 10px 0;
+padding: 5px 0;
+text-transform: capitalize;
+}
+
+#content {
+	margin: 0 0 10px 0;
+	padding: 0 10px;
+	background: #9BA5AA;
+	height: 650px;
+}
+
+ul#optionsList {
+	list-style-type: none;
+}
+
+ul#optionsList li{
+	margin: 0 0 5px 0;
+}
+
+
+#footer {
+	height: 50px;
+}

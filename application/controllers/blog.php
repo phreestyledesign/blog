@@ -1,10 +1,10 @@
-<?php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Blog extends Controller
+class Blog extends CI_Controller
 {
 	public function __construct()
 	{
-		parent::Controller();
+		parent::__construct();
 	
 		// Load models
 		$this->load->model('Post_model', 'post');
@@ -29,6 +29,7 @@ class Blog extends Controller
 		// Get data from model
 		$data['post'] = $this->post->getById($id);
 		
+		
 		// Load views
 		$this->load->view('header');
 		$this->load->view('read', $data);
@@ -50,9 +51,7 @@ class Blog extends Controller
 			}
 		}
 	
-		// Load helpers
-		$this->load->helper('form');
-	
+		
 		// Initialize form
 		$data['action'] = site_url('blog/create');
 		$data['title'] = NULL;
@@ -85,7 +84,7 @@ class Blog extends Controller
 		$post = $this->post->getById($id);
 		
 		// Initialize form
-		$this->load->helper('form');
+
 		$data['action'] = site_url('blog/update/'.$id);
 		$data['title'] = $post->title;
 		$data['content'] = $post->content;

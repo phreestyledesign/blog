@@ -1,6 +1,6 @@
-<?php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Post_model extends Model
+class Post_model extends CI_Model
 {		
 	public $id;
 	public $title;
@@ -9,7 +9,7 @@ class Post_model extends Model
 	
 	public function __construct() 
 	{
-		parent::Model();
+		parent::__construct();
 	}
 
 	public function getAll()
